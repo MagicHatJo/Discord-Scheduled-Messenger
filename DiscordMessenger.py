@@ -278,9 +278,6 @@ class DiscordMessenger(discord.Client):
 			if recipient.id != item["channel_id"]:
 				channel = self.get_channel(int(str(item["channel_id"])))
 
-			print(f"{type(recipient)}: {recipient}")
-			print(f"{item['user']}")
-
 			self.scheduler.add_job(
 				self.send_message,
 				args = [recipient, channel, item["message"]],

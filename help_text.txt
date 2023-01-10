@@ -1,0 +1,18 @@
+```
+Available Commands:
+list :
+ - returns a list of your current messages.
+add [discord user] [interval in seconds] [message] :
+ - adds message to repeating database.
+update [message timestamp] [interval in seconds] :
+ - Updates the message with the new interval.
+delete [message timestamp] :
+ - Removes the message.
+ - This will stop the message from being sent.
+pause [message timestamp] :
+ - This will pause an existing message.
+ - Unpause to resume sending.
+unpause [message timestamp] :
+ - This will resume sending an existing message.
+help : returns this information.
+```
